@@ -1,0 +1,129 @@
+[debug] [2022-10-26T12:57:45.992Z] ----------------------------------------------------------------------
+[debug] [2022-10-26T12:57:45.997Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-10-26T12:57:45.999Z] CLI Version:   11.15.0
+[debug] [2022-10-26T12:57:45.999Z] Platform:      win32
+[debug] [2022-10-26T12:57:46.000Z] Node Version:  v18.12.0
+[debug] [2022-10-26T12:57:46.002Z] Time:          Wed Oct 26 2022 15:57:46 GMT+0300 (Israel Daylight Time)
+[debug] [2022-10-26T12:57:46.003Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-26T12:57:46.408Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-26T12:57:46.409Z] > authorizing via signed-in user (online2021studio@gmail.com)
+[debug] [2022-10-26T12:57:46.410Z] [iam] checking project saios-todolit for permissions ["firebase.projects.get"]
+[debug] [2022-10-26T12:57:46.414Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions [none]
+[debug] [2022-10-26T12:57:46.415Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions x-goog-quota-user=projects/saios-todolit
+[debug] [2022-10-26T12:57:46.416Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-10-26T12:57:47.379Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions 200
+[debug] [2022-10-26T12:57:47.380Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-10-26T12:57:47.383Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit [none]
+[debug] [2022-10-26T12:57:47.970Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit 200
+[debug] [2022-10-26T12:57:47.970Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit {"projectId":"saios-todolit","projectNumber":"386966664124","displayName":"Saios-todolit","name":"projects/saios-todolit","resources":{"hostingSite":"saios-todolit"},"state":"ACTIVE","etag":"1_d12af791-1382-44d8-bb74-36dc77b96cd9"}
+[info] 
+[info] === Serving from 'D:\saios_project\todo'...
+[info] 
+[debug] [2022-10-26T12:57:47.985Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/saios-todolit/sites 
+[debug] [2022-10-26T12:57:49.249Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/saios-todolit/sites 200
+[debug] [2022-10-26T12:57:49.249Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/saios-todolit/sites {"sites":[{"name":"projects/saios-todolit/sites/saios-todolit","defaultUrl":"https://saios-todolit.web.app","appId":"1:386966664124:web:ce303515fe70b99fbbf1b9","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-26T12:57:49.250Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit/webApps/1:386966664124:web:ce303515fe70b99fbbf1b9/config [none]
+[debug] [2022-10-26T12:57:50.423Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit/webApps/1:386966664124:web:ce303515fe70b99fbbf1b9/config 200
+[debug] [2022-10-26T12:57:50.423Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit/webApps/1:386966664124:web:ce303515fe70b99fbbf1b9/config {"projectId":"saios-todolit","appId":"1:386966664124:web:ce303515fe70b99fbbf1b9","storageBucket":"saios-todolit.appspot.com","apiKey":"AIzaSyD6gCc22OhDjcPdGBnDr8YVCLyuEETQ-C4","authDomain":"saios-todolit.firebaseapp.com","messagingSenderId":"386966664124","measurementId":"G-ENTQ3T224P"}
+[debug] [2022-10-26T12:57:50.478Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit [none]
+[debug] [2022-10-26T12:57:51.034Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit 200
+[debug] [2022-10-26T12:57:51.034Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit {"projectId":"saios-todolit","projectNumber":"386966664124","displayName":"Saios-todolit","name":"projects/saios-todolit","resources":{"hostingSite":"saios-todolit"},"state":"ACTIVE","etag":"1_d12af791-1382-44d8-bb74-36dc77b96cd9"}
+[info] i  hosting[saios-todolit]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[saios-todolit]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:22 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:22 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-26T12:58:23.059Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [none]
+[debug] [2022-10-26T12:58:23.064Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [none]
+[debug] [2022-10-26T12:58:23.072Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [none]
+[debug] [2022-10-26T12:58:23.075Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [none]
+[debug] [2022-10-26T12:58:23.078Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [none]
+[debug] [2022-10-26T12:58:23.081Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [none]
+[debug] [2022-10-26T12:58:25.134Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js 200
+[debug] [2022-10-26T12:58:25.134Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js [stream]
+[debug] [2022-10-26T12:58:25.154Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js 200
+[debug] [2022-10-26T12:58:25.154Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-functions-compat.js [stream]
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:25 +0000] "GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1" 200 8116 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:25 +0000] \"GET /__/firebase/9.12.1/firebase-functions-compat.js HTTP/1.1\" 200 8116 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:25 +0000] "GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1" 200 9248 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:25 +0000] \"GET /__/firebase/9.12.1/firebase-app-compat.js HTTP/1.1\" 200 9248 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-26T12:58:25.167Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js 200
+[debug] [2022-10-26T12:58:25.167Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-messaging-compat.js [stream]
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:25 +0000] "GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1" 200 9911 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:25 +0000] \"GET /__/firebase/9.12.1/firebase-messaging-compat.js HTTP/1.1\" 200 9911 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-26T12:58:25.177Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js 200
+[debug] [2022-10-26T12:58:25.177Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js [stream]
+[debug] [2022-10-26T12:58:25.179Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [none]
+[debug] [2022-10-26T12:58:25.191Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [none]
+[debug] [2022-10-26T12:58:25.195Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [none]
+[debug] [2022-10-26T12:58:25.263Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js 200
+[debug] [2022-10-26T12:58:25.263Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js [stream]
+[debug] [2022-10-26T12:58:25.276Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js 200
+[debug] [2022-10-26T12:58:25.276Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js [stream]
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:25 +0000] "GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1" 200 36301 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:25 +0000] \"GET /__/firebase/9.12.1/firebase-auth-compat.js HTTP/1.1\" 200 36301 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:25 +0000] "GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1" 200 48064 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:25 +0000] \"GET /__/firebase/9.12.1/firebase-database-compat.js HTTP/1.1\" 200 48064 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-26T12:58:25.919Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [none]
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:25 +0000] "GET /__/firebase/init.js?useEmulator=true HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:25 +0000] \"GET /__/firebase/init.js?useEmulator=true HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-26T12:58:26.437Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js 200
+[debug] [2022-10-26T12:58:26.437Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics-compat.js [stream]
+[debug] [2022-10-26T12:58:26.443Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js 200
+[debug] [2022-10-26T12:58:26.443Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-remote-config-compat.js [stream]
+[debug] [2022-10-26T12:58:26.475Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js 200
+[debug] [2022-10-26T12:58:26.476Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-storage-compat.js [stream]
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:27 +0000] "GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1" 200 27303 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:27 +0000] \"GET /__/firebase/9.12.1/firebase-remote-config-compat.js HTTP/1.1\" 200 27303 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:27 +0000] "GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1" 200 25831 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:27 +0000] \"GET /__/firebase/9.12.1/firebase-analytics-compat.js HTTP/1.1\" 200 25831 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:27 +0000] "GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1" 200 38965 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:27 +0000] \"GET /__/firebase/9.12.1/firebase-storage-compat.js HTTP/1.1\" 200 38965 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-26T12:58:27.816Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js 200
+[debug] [2022-10-26T12:58:27.816Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/9.12.1/firebase-performance-compat.js [stream]
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:28 +0000] "GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1" 200 30702 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:28 +0000] \"GET /__/firebase/9.12.1/firebase-performance-compat.js HTTP/1.1\" 200 30702 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:29 +0000] "GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1" 200 313501 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:29 +0000] \"GET /__/firebase/9.12.1/firebase-firestore-compat.js HTTP/1.1\" 200 313501 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] i  hosting: ::1 - - [26/Oct/2022:12:58:29 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [26/Oct/2022:12:58:29 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] Shutting down...
+[info] Shutting down...
+[info] Shutting down...
+[debug] [2022-10-26T13:00:54.502Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-10-26T13:01:24.331Z] ----------------------------------------------------------------------
+[debug] [2022-10-26T13:01:24.336Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-26T13:01:24.337Z] CLI Version:   11.15.0
+[debug] [2022-10-26T13:01:24.338Z] Platform:      win32
+[debug] [2022-10-26T13:01:24.342Z] Node Version:  v18.12.0
+[debug] [2022-10-26T13:01:24.345Z] Time:          Wed Oct 26 2022 16:01:24 GMT+0300 (Israel Daylight Time)
+[debug] [2022-10-26T13:01:24.346Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-26T13:01:24.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-26T13:01:24.611Z] > authorizing via signed-in user (online2021studio@gmail.com)
+[debug] [2022-10-26T13:01:24.612Z] [iam] checking project saios-todolit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-26T13:01:24.619Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions [none]
+[debug] [2022-10-26T13:01:24.620Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions x-goog-quota-user=projects/saios-todolit
+[debug] [2022-10-26T13:01:24.620Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-26T13:01:46.143Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions
+[debug] [2022-10-26T13:01:46.146Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit [none]
+[debug] [2022-10-26T13:01:46.155Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/saios-todolit
+[debug] [2022-10-26T13:01:46.171Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/saios-todolit
+    at RetryOperation._fn (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:242:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project saios-todolit. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-10-26T13:02:17.449Z] ----------------------------------------------------------------------
+[debug] [2022-10-26T13:02:17.459Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-26T13:02:17.461Z] CLI Version:   11.15.0
+[debug] [2022-10-26T13:02:17.461Z] Platform:      win32
+[debug] [2022-10-26T13:02:17.462Z] Node Version:  v18.12.0
+[debug] [2022-10-26T13:02:17.464Z] Time:          Wed Oct 26 2022 16:02:17 GMT+0300 (Israel Daylight Time)
+[debug] [2022-10-26T13:02:17.465Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-26T13:02:17.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-26T13:02:17.663Z] > authorizing via signed-in user (online2021studio@gmail.com)
+[debug] [2022-10-26T13:02:17.663Z] [iam] checking project saios-todolit for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-26T13:02:17.669Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions [none]
+[debug] [2022-10-26T13:02:17.669Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions x-goog-quota-user=projects/saios-todolit
+[debug] [2022-10-26T13:02:17.670Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-26T13:02:17.801Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/saios-todolit:testIamPermissions
+[debug] [2022-10-26T13:02:17.896Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/saios-todolit [none]
+[debug] [2022-10-26T13:02:17.923Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/saios-todolit
+[debug] [2022-10-26T13:02:17.938Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/saios-todolit
+    at RetryOperation._fn (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:242:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project saios-todolit. Please make sure the project exists and your account has permission to access it.
